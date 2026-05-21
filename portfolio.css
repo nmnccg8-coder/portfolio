@@ -1,0 +1,354 @@
+/* --- СТИЛЬ ТОХИРГОО --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5eae1;
+    color: #ff8e6e;
+    padding-top: 90px; /* Дээшээ илүү гарахаас сэргийлнэ */
+}
+
+/* НАВИГЕЙШН */
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f5eae1;
+    z-index: 1000;
+    padding: 25px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 900;
+    color: #ff8e6e;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ccbba3;
+    font-weight: 700;
+    font-size: 16px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+}
+
+/* HOVER ЭФФЕКТ */
+nav a:hover, nav a.active {
+    color: #ff8e6e;
+    border-bottom: 2px solid #ff8e6e;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    min-height: calc(100vh - 90px); /* Дэлгэцийн хэмжээнд яг тааруулах */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* --- 1. HOME ХЭСЭГ --- */
+.home-container {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.home-text h1 {
+    font-size: 90px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+.home-text .artist-name {
+    font-size: 42px;
+    font-weight: 700;
+    color: #ff8e6e;
+    margin: 10px 0;
+}
+
+.home-text .role {
+    font-size: 22px;
+    font-weight: 700;
+    color: #4a5568;
+    margin-bottom: 40px;
+}
+
+.action-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.icon-capsule {
+    background-color: #ffc4b2;
+    padding: 14px 28px;
+    border-radius: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+.icon-capsule a {
+    color: #2d3748;
+    font-size: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* HOVER ЭФФЕКТ */
+.icon-capsule a:hover {
+    transform: scale(1.2);
+    color: #ff8e6e;
+}
+
+.btn-download-cv {
+    background-color: #ffffff;
+    color: #ff8e6e;
+    padding: 14px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+/* HOVER ЭФФЕКТ */
+.btn-download-cv:hover {
+    transform: translateY(-3px);
+    background-color: #ff8e6e;
+    color: #ffffff;
+}
+
+.home-image-wrap, .about-image-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blob-bg {
+    position: absolute;
+    width: 380px;
+    height: 380px;
+    background-color: #ff8e6e;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.profile-img {
+    position: relative;
+    z-index: 2;
+    width: 380px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* --- 2. ABOUT ХЭСЭГ --- */
+.about-section {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.about-title { font-size: 45px; font-weight: 900; color: #ff8e6e; }
+.about-title span { color: #fff; }
+.about-subtitle { color: #ff8e6e; font-size: 18px; font-weight: 600; margin: 15px 0; }
+.about-desc { color: #626262; line-height: 1.7; font-size: 15px; text-align: justify; margin-bottom: 25px; }
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 35px;
+    color: #626262;
+}
+
+.btn-about-cv {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #ff8e6e;
+    padding: 14px 35px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+.btn-about-cv:hover {
+    transform: translateY(-3px);
+    background-color: #ff8e6e;
+    color: #ffffff;
+}
+
+/* --- 3. SKILLS ХЭСЭГ --- */
+.section-title { font-size: 40px; font-weight: 900; margin-bottom: 40px; text-align: center; }
+.section-title span { color: #fff; }
+.skills-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.skill-card { background: #fff; padding: 25px; border-radius: 20px; transition: transform 0.3s; }
+.skill-card:hover { transform: translateY(-5px); }
+.skill-info { display: flex; justify-content: space-between; font-weight: 700; margin-bottom: 10px; color: #4a4a4a;}
+.progress-bar { background: #f5eae1; height: 12px; border-radius: 10px; overflow: hidden; }
+.progress { background: #ff8e6e; height: 100%; }
+
+/* --- 4. PORTFOLIO ХЭСЭГ --- */
+.portfolio-title { font-size: 40px; font-weight: 900; text-align: center; margin-bottom: 30px; }
+.portfolio-title span { color: #fff; }
+.filter-buttons { display: flex; justify-content: center; gap: 15px; margin-bottom: 40px; }
+.filter-btn {
+    padding: 12px 30px;
+    border: 2px solid #ff8e6e;
+    background: #fff;
+    color: #ff8e6e;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.filter-btn.active, .filter-btn:hover {
+    background: #ff8e6e;
+    color: #fff;
+}
+.design-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+
+/* Карт дээр дарах hover эффект */
+.design-item { 
+    border-radius: 20px; 
+    overflow: hidden; 
+    background: #fff; 
+    height: 400px;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.design-item:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.design-item img { width: 100%; height: 100%; object-fit: cover; }
+
+/* --- 5. CONTACT ХЭСЭГ --- */
+.contact-main-title { font-size: 40px; font-weight: 900; text-align: center; color: #ff8e6e; margin-bottom: 30px; }
+.contact-main-title span { color: #fff; }
+.contact-white-card {
+    background-color: #ffffff;
+    border-radius: 35px;
+    padding: 50px 40px;
+    max-width: 850px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+.contact-form { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 18px 25px;
+    border: 1px solid #ffe3dc;
+    border-radius: 18px;
+    background-color: #fffdfc;
+    outline: none;
+    font-size: 15px;
+    color: #4a4a4a;
+    transition: border-color 0.3s;
+}
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #ff8e6e;
+}
+.full-width { grid-column: span 2; }
+.form-group textarea { height: 180px; resize: none; }
+
+.btn-sent-long {
+    grid-column: span 2;
+    background-color: #ff8e6e;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 16px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center;
+}
+.btn-sent-long:hover {
+    background-color: #e27556;
+    transform: translateY(-2px);
+}
+
+/* --- ПОП-АП (MODAL) ЦОНХНЫ СТИЛЬ (БУЦААЖ НЭМЭВ) --- */
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 28px;
+    width: 90%;
+    max-width: 850px;
+    max-height: 85vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.close-modal {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    font-size: 35px;
+    cursor: pointer;
+    color: #aaa;
+    transition: color 0.2s;
+}
+.close-modal:hover { color: #ff8e6e; }
+
+#modalTitle { color: #ff8e6e; margin-bottom: 5px; font-weight: 900; }
+#modalCategory { color: #888; font-weight: 600; margin-bottom: 25px; }
+.modal-body { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.modal-img-container { background: #fdfaf7; border-radius: 18px; padding: 10px; display: flex; align-items: center; justify-content: center;}
+#modalImg { width: 100%; max-height: 400px; object-fit: contain; border-radius: 10px;}
+.modal-desc h3 { color: #4a4a4a; margin-bottom: 12px; }
+.modal-desc p { line-height: 1.7; color: #666; text-align: justify; font-size: 15px;}
+
+/* РЕСПОНСИВ */
+@media (max-width: 992px) {
+    .home-container, .about-section, .skills-grid, .design-grid, .contact-form, .modal-body {
+        grid-template-columns: 1fr;
+    }
+    .full-width, .btn-sent-long { grid-column: span 1; }
+    .sticky-header { padding: 20px 40px; }
+    .design-item { height: 350px; }
+}

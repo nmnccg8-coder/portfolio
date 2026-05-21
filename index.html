@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomintsetseg - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <header class="sticky-header">
+        <div class="logo">Portfolio.</div>
+        <nav class="nav-menu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#portfolio" class="nav-link">My designs</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="home-section">
+        <div class="home-container">
+            <div class="home-text">
+                <h1>HELLO,</h1>
+                <h2 class="artist-name">I'm Nomintsetseg</h2>
+                <p class="role">and i'm graphic design student</p>
+                
+                <div class="action-container">
+                    <div class="icon-capsule">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+                        <a href="#"><i class="fas fa-phone-alt"></i></a>
+                    </div>
+                    <a href="#" class="btn-download-cv">Download CV</a>
+                </div>
+            </div>
+
+            <div class="home-image-wrap">
+                <div class="blob-bg"></div>
+                <img src="1.png" alt="Nomintsetseg" class="profile-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2 class="about-title">About <span>me</span></h2>
+            <p class="about-subtitle">I'm Nomintsetseg graphic design student</p>
+            <p class="about-desc">
+                Би Их Засаг Олон Улсын Их Сургууль-ийн График дизайны 3-р курсийн оюутан. Суралцах хугацаандаа би визуал харилцаа, бүтээлч асуудал шийдвэрлэлт болон дизайны сэтгэлгээний чиглэлээр бат бөх суурь мэдлэг, ур чадвар эзэмшсэн. Урлагийн төрөл бүрийг сонирхон судлах дуртай бөгөөд бүжиглэх, зураг зурах зэрэг хувийн сонирхлоосоо урам зориг авч бүтээлээ хөгжүүлдэг. Хичээлийнхээ хажуугаар би нейл артист хийдэг бөгөөд энэ нь миний жижиг, нарийн деталь дээр ажиллах чадвар, өнгөний мэдрэмж болон харагдах байдлын хувьд гоо зүйн шийдэл гаргах ур чадварыг улам сайжруулсан.
+            </p>
+            
+            <div class="info-grid">
+                <div class="info-item"><strong>City:</strong> Ulaanbaatar</div>
+                <div class="info-item"><strong>Gmail:</strong> Nmnceg8@gmail.com</div>
+                <div class="info-item"><strong>Age:</strong> 20</div>
+                <div class="info-item"><strong>Phone:</strong> 88587775</div>
+            </div>
+
+            <a href="#" class="btn-about-cv">Download CV</a>
+        </div>
+
+        <div class="about-image-wrap">
+            <div class="blob-bg"></div>
+            <img src="1.png" alt="Nomintsetseg About" class="profile-img">
+        </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-info"><span>3ds Max</span><span>85%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info"><span>Adobe Illustrator</span><span>90%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info"><span>Adobe Photoshop</span><span>80%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-card">
+                <div class="skill-info"><span>CorelDraw</span><span>75%</span></div>
+                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio-section">
+        <h2 class="portfolio-title">My <span>designs</span></h2>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Бүгд</button>
+            <button class="filter-btn" data-filter="3dsmax">3ds Max</button>
+            <button class="filter-btn" data-filter="illustrator">Illustrator</button>
+            <button class="filter-btn" data-filter="photoshop">Photoshop</button>
+            <button class="filter-btn" data-filter="coreldraw">CorelDraw</button>
+        </div>
+        
+        <div class="design-grid">
+            <div class="design-item" data-category="photoshop" data-id="design1"><img src="ps 1.png" alt="ps 1"></div>
+            <div class="design-item" data-category="illustrator" data-id="design2"><img src="corel caake.png" alt="Design 2"></div>
+            <div class="design-item" data-category="3dsmax" data-id="design3"><img src="3d.png" alt="Design 3"></div>
+            <div class="design-item" data-category="coreldraw" data-id="cakelab"><img src="corel.png" alt="Cake Lab"></div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="contact-main-title">Contact <span>Me!</span></h2>
+        
+        <div class="contact-white-card">
+            <form class="contact-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <input type="text" placeholder="First Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Mob.Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group full-width">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-sent-long">Sent</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="designModal" class="custom-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modalTitle">Бүтээлийн нэр</h2>
+            <p id="modalCategory"></p>
+            <div class="modal-body">
+                <div class="modal-img-container">
+                    <img id="modalImg" src="" alt="Бүтээл">
+                </div>
+                <div class="modal-desc">
+                    <h3>Хэрхэн хийгдсэн бэ?</h3>
+                    <p id="modalText">Тайлбар...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Поп-ап өгөгдөл
+        const designsData = {
+            "design1": { title: "SHINE JILIIN POSTER", category: "photoshop", text: "Алдарт Чарли Браун хүүхэлдэйн киноны дүрүүдээс сэдэвлэн бүтээсэн баярын постер дизайн. Өвлийн үдшийн одтой тэнгэрийг зөөлөн хөх өнгөөр, цасыг цэвэр крем өнгөөр шийдэж, баярын гол дүрүүдийг дулаан уур амьсгалтайгаар дүрсэлсэн. Текстийн фонт болон дүрүүдийн байршлыг визуал тэнцвэртэй байхаар тооцож, минимал хэв маягаар хийсэн шинэ жилийн постер дизайн юм." },
+            "design2": { title: "MOCK UP", category: "Illustrator", text: "Жижиг бялууны газарт зориулсан 'Cake Lab' брэндийн концепцыг гаргахдаа хэрэглэгчдэд хайр татам, дулаан мэдрэмж төрүүлэхүйц муурын дүрстэй минималист логог зохиосон. Брэндийн үндсэн өнгөөр гүзээлзгэний зөөлөн ягаан болон гүн бор өнгүүдийг сонгож, логоны зөв хэрэглээг хормогч, бялууны хайрцаг, купон, нэрийн хуудас зэрэг сурталчилгааны иж бүрдэл бүр дээр нарийн тооцож, визуал өнгө төрхийг нь төгс хослуулсан бүтээл юм." },
+            "design3": { title: "3ds Max POSTER", category: "3ds Max", text: "illustrator, 3ds max-ийг хослуулсан casio-гийн постер дизайн юм. цаг бол алт гэсэн утгыг илэрхийлж хийсэн болно." },
+            "cakelab": { title: "LOGO DESIGN", category: "CorelDraw", text: "Миний хамгийн анхны өөрийн минь лого. Энэхүү лого нь байгалийн дулаан энергийг илэрхийлсэн алтан шаргал дэлбээнүүд болон цэвэр тунгалаг байдлыг бэлгэдсэн цэнхэр өнгийн бөмбөлөг хэлбэрийг хослуулан бүтээгдсэн. Дизайныг гаргахдаа геометрийн зөв дугуй дүрсийг ашиглан алтан харьцааны дагуу хэлбэржүүлж, өнгөний зохицол болон зөв, буруу хэрэглээний дүрмийг нарийн тооцож хийсэн    анхны бүтээл юм." }
+        };
+
+        const modal = document.getElementById("designModal");
+        const closeModal = document.querySelector(".close-modal");
+
+        document.querySelectorAll(".design-item").forEach(item => {
+            item.addEventListener("click", () => {
+                const id = item.getAttribute("data-id");
+                const data = designsData[id];
+                if(data) {
+                    document.getElementById("modalTitle").innerText = data.title;
+                    document.getElementById("modalCategory").innerText = "Программ: " + data.category;
+                    document.getElementById("modalText").innerText = data.text;
+                    document.getElementById("modalImg").src = item.querySelector("img").src;
+                    modal.style.display = "flex";
+                }
+            });
+        });
+
+        closeModal.addEventListener("click", () => { modal.style.display = "none"; });
+        window.addEventListener("click", (e) => { if (e.target == modal) modal.style.display = "none"; });
+
+        // Фильтр ажиллагаа
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        const designItems = document.querySelectorAll(".design-item");
+
+        filterButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                filterButtons.forEach(btn => btn.classList.remove("active"));
+                button.classList.add("active");
+                const filterValue = button.getAttribute("data-filter");
+
+                designItems.forEach(item => {
+                    if (filterValue === "all" || item.getAttribute("data-category") === filterValue) {
+                        item.style.display = "block";
+                    } else {
+                        item.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
